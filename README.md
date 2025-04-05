@@ -4,9 +4,9 @@ Hi! I'm **Dimitris**, a passionate and curious learner in the field of **Data Sc
 
 This GitHub repository will be a collection of **my academic and personal projects**, covering a wide range of topics such as:
 
-- 📊 **Data Analysis** and Visualization (Pandas, Matplotlib, Seaborn)
-- 🧠 **Machine Learning & Deep Learning** (Scikit-Learn, TensorFlow, Keras)
-- 🛠️ **ETL Pipelines & Data Engineering** (MongoDB, PostgreSQL, Apache Spark)
+-  **Data Analysis** and Visualization (Pandas, Matplotlib, Seaborn)
+-  **Machine Learning & Deep Learning** (Scikit-Learn, TensorFlow, Keras)
+-  **ETL Pipelines & Data Engineering** (MongoDB, PostgreSQL, Apache Spark)
 
 ---
 
