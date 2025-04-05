@@ -20,10 +20,21 @@ This GitHub repository will be a collection of **my academic and personal projec
 
  Based in: **Athens, Greece**
 
+---
 
+##  Tech Stack / Tools I Use
 
+- Python (Pandas, NumPy, Scikit-Learn, TensorFlow, Keras)
+- SQL (PostgreSQL, SQLite)
+- NoSQL (MongoDB)
+- Spark (PySpark)
+- Docker
+- Git & GitHub
+- Jupyter Notebooks, PyCharm
+
+---
 ## 📫 Contact Me
 
-- 💼 [LinkedIn](www.linkedin.com/in/dimitris-mamakis-ab37002b8)
+- 💼 [LinkedIn](https://www.linkedin.com/in/dimitris-mamakis-ab37002b8)
 - 📧 Email: dimitrismks@gmail.com
 
