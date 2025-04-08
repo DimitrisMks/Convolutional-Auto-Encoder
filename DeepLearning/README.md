@@ -62,7 +62,7 @@ The 3-Nearest Neighbors classifier was used consistently across all representati
 - OpenAI CLIP model
 - Scikit-learn (3-NN classifier)
 - NumPy, Matplotlib, PIL
-## 📌 Project Structure
+
 
 
 
