@@ -14,7 +14,7 @@ The goal is to compare classification accuracy across these feature spaces and h
 | Representation Space       | Description                                       | 3-NN Accuracy |
 |----------------------------|---------------------------------------------------|---------------|
 | Raw Image Space            | Flattened 32×32×3 vectors                         | 35.60%        |
-| Autoencoder Latent Space   | 512-dim compressed features (4×4×32)              | 45.70%        |
+| Autoencoder Latent Space   | 512-dim compressed features (4×4×32)              | 44.30%        |
 | ResNet50 Embeddings        | 2048-dim features (ImageNet pretrained)          | 88.10%        |
 | CLIP Embeddings (ViT-B/32) | 512-dim multimodal features from image-text model| 92.60%        |
 
@@ -33,7 +33,7 @@ A custom CAE architecture was designed with 3 convolutional blocks in the encode
 - **Loss**: Mean Squared Error (MSE)
 - **Optimizer**: Adam (lr = 0.001)
 - **Training**: 50 epochs, batch size = 8
-- **Latent Space Accuracy**: **45.70%**
+- **Latent Space Accuracy**: **44.30%**
 
 ### 🔹 2. ResNet50 Embeddings
 
@@ -55,6 +55,26 @@ The 3-Nearest Neighbors classifier was used consistently across all representati
 
 - Distance metric: Euclidean
 - Accuracy metric: Classification accuracy on test set
+## 📈 Visualization with t-SNE
+
+To better understand how each type of image representation separates the different classes in feature space, **t-SNE** was used to reduce the high-dimensional vectors to 2D.
+
+Four 2D scatter plots were generated for:
+
+1. **Raw Image Space** (flattened pixel vectors)
+2. **Autoencoder Latent Space**
+3. **ResNet50 Embeddings**
+4. **CLIP Embeddings**
+
+Each plot visualizes the training set in 2D with color-coded class labels. As expected:
+
+- **Raw pixel features** produce poor separation.
+- **Autoencoder representations** form somewhat better clusters.
+- **ResNet50 and CLIP embeddings** show clear, tight clustering by class — confirming their strong semantic encoding power.
+
+This visual comparison highlights how **better feature representations** lead to **better class separability**, even for simple classifiers like 3-NN.
+
+> ✅ Technique: `sklearn.manifold.TSNE` with `perplexity=30` and `random_state=42`
 
 ## 🛠️ Technologies Used
 
@@ -62,6 +82,11 @@ The 3-Nearest Neighbors classifier was used consistently across all representati
 - OpenAI CLIP model
 - Scikit-learn (3-NN classifier)
 - NumPy, Matplotlib, PIL
+
+## 📚 References
+- Masci, J., Meier, U., Cireşan, D., & Schmidhuber, J. (2011). [Stacked Convolutional Auto-Encoders for Hierarchical Feature Extraction](https://people.idsia.ch/~ciresan/data/icann2011.pdf). 
+- He, K., Zhang, X., Ren, S., & Sun, J. (2016). [Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385).
+- Radford, A. et al. (2021). [Learning Transferable Visual Models From Natural Language Supervision (CLIP)](https://arxiv.org/abs/2103.00020). arXiv:2103.00020.
 
 
 
