@@ -17,7 +17,7 @@ with DAG(
     @task
     def create_table():
         ##initialize PostgresHook
-        postgres_hook = PostgresHook(postgres_conn_id='δε')
+        postgres_hook = PostgresHook(postgres_conn_id='my_postgres_connection')
 
         create_table_query="""
         CREATE TABLE IF NOT EXISTS apod_data (
