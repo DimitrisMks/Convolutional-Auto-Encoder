@@ -1,4 +1,4 @@
-![img_2.png](img_2.png)
+![image](https://github.com/user-attachments/assets/1dc45d9f-b3b0-49f9-9a86-3073a9ca1f7d)
 
 
 # 🌌 AstroFlow ETL
