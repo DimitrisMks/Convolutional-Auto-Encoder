@@ -6,7 +6,7 @@ This GitHub repository will be a collection of **my academic and personal projec
 
 -  **Data Analysis** and Visualization (Pandas, Matplotlib, Seaborn)
 -  **Machine Learning & Deep Learning** (Scikit-Learn, TensorFlow, Keras)
--  **ETL Pipelines & Data Engineering** (MongoDB, PostgreSQL, Apache Spark)
+-  **ETL Pipelines & Data Engineering** (MongoDB, PostgreSQL, Apache Spark, Apache Airflow)
 
 ---
 
@@ -27,7 +27,8 @@ This GitHub repository will be a collection of **my academic and personal projec
 - Python (Pandas, NumPy, Scikit-Learn, TensorFlow, Keras)
 - SQL (PostgreSQL, SQLite)
 - NoSQL (MongoDB)
-- Spark (PySpark)
+- Apache Spark (PySpark)
+- Data Flow Orchestration (Apache Airflow)
 - Docker
 - Git & GitHub
 - Jupyter Notebooks, PyCharm
